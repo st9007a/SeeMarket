@@ -1,0 +1,62 @@
+/*========== Reset ==========*/
+* { 
+    margin: 0;
+	padding: 0;
+    text-decoration:none;
+}
+
+
+body {
+    background-color:rgba(95, 26, 0, 0.87);
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+
+.ui {
+    position:absolute;
+    z-index: 2;
+    opacity:0.5;
+}
+
+
+#settingBtn {
+    right:12vw;
+    bottom:35px;
+    width:15%;
+}
+
+
+#hintBtn {
+    left:42vw;
+    bottom:35px;
+    width:15%;
+}
+
+
+#prizeBtn {
+    left:12vw;
+    bottom:35px;
+    width:15%;
+}
+
+.bigbag {
+	position: relative;
+	top:0;
+	z-index: 4;
+}
+
+
+
+/*====測試用====*/
+.testClass,.cd-testimonials-wrapper,.cd-container,.cd-testimonials {
+    font-size:1.5em;
+    color:rgba(17, 201, 24, 0.67);
+}
+
+
+#demo {
+    font-size: 1em;
+}
+
+

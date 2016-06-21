@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+
+
+<head>
+   
+    <title>一探舊境 "See" Market</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <!--網頁編碼-->
+    <meta charset="utf-8" />
+    
+    <!--RWD相關-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no;" />
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel='stylesheet' href="InputEffects/set2.css">
+    <link rel='stylesheet' href="story.css">
+    <link rel="stylesheet" href="setting_css/reset.css">
+	<link rel="stylesheet" href="price_css/style.css">
+    <link rel="stylesheet" href="setting_css/style.css">
+    <link rel="stylesheet" href="elong/style.css">
+    
+    
+    <!--JS-->
+    <script src="js/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src='js/jcookie/jquery.cookie.js'></script>
+    <script src='js/typed.js-master/js/typed.js'></script>
+    <script src='InputEffects/classie.js'></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="elong/main.js"></script>
+
+</head>
+
+
+
+
+<body>
+           
+    <video autoplay id="camera" style=" height:100vh; "></video>
+    <canvas id="test" width="450px" height="800px" style="display:none;"></canvas>
+    
+	<!--外框-->
+    <img id="border" src="img/frame.png">
+    
+    
+	<!--幫助按鈕-->
+    <img id="hintBtn" class="ui" src="img/hint.png">
+    
+
+    <!--獎牌按鈕-->
+    <img id="prizeBtn" class="ui" src="img/prize.png">
+    
+    <!--獎牌主選單-->
+    <div class='bigbag'>
+        <img id="prizebg" src="img/prizebg.png" alt="Author image">
+        <div class="cd-testimonials-wrapper cd-container">
+            <ul class="cd-testimonials">
+                <li>
+                    <div class="cd-author">
+                        <img id="Medal1P" src="img/bigprizegrey.png" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li id="Medal1T1">&nbsp&nbsp&nbsp???</li>
+                            <li id="Medal1T2">尚未取得</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cd-author">
+                        <img id="Medal2P" src="img/bigprizegrey.png" alt="Author image">
+                        <ul class="cd-author-info">
+                            <li id="Medal2T1">&nbsp&nbsp&nbsp???</li>
+                            <li id="Medal2T1">尚未取得</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul> <!-- cd-testimonials -->
+
+            <a href="#0" class="close-btn">Close</a>
+
+        </div> <!-- cd-testimonials-wrapper -->
+    </div>
+
+    
+    
+          
+    <!--設定按鈕-->
+	<a href="#cd-nav" class="cd-nav-trigger">
+			<img id="settingBtn" class="ui" src="img/setting.png">
+	</a>
+         
+    <!--設定主選單-->
+	<nav class="cd-nav-container" id="cd-nav">
+
+		<ul class="cd-nav">
+		
+			<div id='playerInfo' data-menu="about" class="setting">
+				<a href="">
+					<span>
+						<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"> <g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 38,16 62,16 62,58 2,58 2,16 26,16 " stroke-linejoin="square"></polyline> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38,20H26V8 c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6V20z" stroke-linejoin="square"></path> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M20,38L20,38 c-2.2,0-4-1.8-4-4v-2c0-2.2,1.8-4,4-4h0c2.2,0,4,1.8,4,4v2C24,36.2,22.2,38,20,38z" stroke-linejoin="square"></path> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="38" y1="36" x2="54" y2="36" stroke-linejoin="square"></line> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="38" y1="44" x2="48" y2="44" stroke-linejoin="square"></line> <path fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,48H10v0 c0-3.3,2.7-6,6-6h8C27.3,42,30,44.7,30,48L30,48z" stroke-linejoin="square"></path> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="12" x2="32" y2="10" stroke-linejoin="square"></line> </g> </svg>
+					</span>
+
+					<em>玩家資訊</em>
+				</a>
+			</div>
+		
+
+			<div id="readme" data-menu="projects" class="setting">
+				<a href="">
+					<span>
+						<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"> <g transform="translate(0, 0)"> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 22,12 22,4 42,4 42,12 " stroke-linejoin="square"></polyline> <line fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="44" y1="44" x2="20" y2="44" stroke-linejoin="square"></line> <polyline fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="12,44 2,44 2,12 62,12 62,44 52,44 " stroke-linejoin="square"></polyline> <polyline fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="58,44 58,60 6,60 6,44 " stroke-linejoin="square"></polyline> <rect data-color="color-2" x="22" y="22" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="20" height="10" stroke-linejoin="square"></rect> <rect data-color="color-2" x="12" y="40" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="square"></rect> <rect data-color="color-2" x="44" y="40" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="square"></rect> </g> </svg>
+					</span>
+			
+					<em>說明</em>
+				</a>
+			</div>
+			
+			
+			<div id='about' class="setting" data-menu="index" onclick="location.href='/about'">
+				<a href="https://luffy.ee.ncku.edu.tw:9527/about">
+<!--				<a href="about.html">-->
+					<span>
+						<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64"><g transform="translate(0, 0)"> <polyline data-cap="butt" fill="none" stroke="#9e85d0" stroke-width="2" stroke-miterlimit="10" points="10,24.9 10,60 26,60 26,44 38,44 38,60 54,60 54,24.9 " stroke-linejoin="square" stroke-linecap="butt"></polyline> <polyline data-color="color-2" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points=" 4,30 32,6 60,30 " stroke-linejoin="square"></polyline> <rect data-color="color-2" x="26" y="24" fill="none" stroke="#9e85d0" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="10" stroke-linejoin="square"></rect> </g></svg>
+					</span>
+
+					<em>關於</em>
+				</a>
+			</div>
+
+			
+
+		</ul> <!-- .cd-3d-nav -->
+	</nav>
+        
+        
+    <!--說明-->
+    <div class="note">
+      	<div id="noteOpacity"></div>
+       	<img id="notePic" src="img/note.png">
+        <h1 class="word" id='readmeWord'></h1>
+    </div>
+         
+    
+<!---------遊戲內容---------->
+    
+	<!--LOGO-->
+    <img id="logo" src="img/%E9%A6%96%E9%A0%81.jpg">
+
+    <!--npc-->
+<!--
+    <img id='n1' data-id='1' class='npc' src='img/%E8%80%86%E8%80%81.png'>
+    <img id='n2' data-id='2' class='npc' src='img/%E7%99%BC%E5%82%B3%E5%96%AE%E7%9A%84%E5%BA%97%E5%93%A1.png'>
+    <img id='n3' data-id='3' class='npc' src='img/%E8%80%81%E9%97%861.png'>
+    <img id='n4' data-id='4' class='npc' src='img/%E7%88%B6%E6%AF%8D.png'>
+-->
+    
+    <img id='n1' data-id='1' class='npc' src='img/%E8%80%86%E8%80%81.png' style="top:20px;">
+    <img id='n2' data-id='2' class='npc' src='img/%E7%99%BC%E5%82%B3%E5%96%AE%E7%9A%84%E5%BA%97%E5%93%A1.png' style="top:200px;">
+    <img id='n3' data-id='3' class='npc' src='img/%E8%80%81%E9%97%861.png' style="left:20px;">
+    <img id='n4' data-id='4' class='npc' src='img/%E7%88%B6%E6%AF%8D.png' style="top:30px;left:20px;">
+    
+    <!--對話框-->
+    <div class="frame">
+       	<img class="frame" src="img/bar.png">
+        <h1 id='typed'></h1>
+    </div>
+    
+    <!--提示-->
+    <div class="note">
+      	<div id="noteOpacity"></div>
+       	<img id="notePic" src="img/note.png">
+        <h1 class="word" id='noteWord'></h1>
+    </div>
+    
+	<!--Overlay-->
+    <img id='overlay' class='overlay' src='img/overlay.png'>
+
+    <!--路人給你傳單-->
+    <div>
+        <img id = 'giveLeaflet' src = 'img/f1.png'>
+    </div>
+
+    <!--到定位傳單冒出來,按按按會有變化-->
+    <div id='leaflet' class="flyer">
+        <img id='leaflet1' class="flyer" src='img/g1.png'>
+        <img id='leaflet2' class="flyer" src='img/g2.png'>
+        <img id='leaflet3' class="flyer" src='img/g3.png'>
+    </div>
+
+    <!--倒數顯示-->
+    <div id='timeBack' style='display:none'>
+        <h1 id='timeBackLabel'></h1>
+    </div>
+
+    <!--倒數完後的輸入布店年代那題-->
+    <div id = 'inputPwd'>
+        <span class="input input--nao" >
+            <input class="input__field input__field--nao" type="text" id="Pwd" />
+            <label class="input__label input__label--nao" for="input-2">
+                <span class="input__label-content input__label-content--nao">輸入答案</span>
+            </label>
+            <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+                <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+            </svg>
+        </span>
+        <button id = 'checkPwd' class="nav-btn">OK！</button>
+    </div>
+
+
+
+    <!--江順成獎牌-->
+    <div>
+        <img id='madel1' src='img/bigprize.png' class="madel">
+    </div>
+
+    <!--義隆瓷器遊戲-->
+    <div id='findObj' >
+        <img id='1select' class='select' src='img/check.png' style="top:10vh;left:50vw;">
+        <img id ='1' class='obj' src='img/3.png' style="top:10vh;left:50vw;">
+
+        <img id='2select' class='select' src='img/check.png' style="top:45vh;left:20vw;">
+        <img id ='2' class='obj' src='img/4.png' style="top:40vh;left:20vw;">
+
+        <img id='3select' class='select'  src='img/check.png' style="top:50vh;left:60vw;">
+        <img id ='3' class='obj' src='img/1.png' style="top:50vh;left:60vw;">
+
+        <img id='4select' class='select'  src='img/check.png' style="top:30vh;left:70vw;">
+        <img id ='4' class='obj' src='img/5.png' style="top:30vh;left:70vw;">
+
+        <img id='5select' class='select' src='img/check.png' style="top:20vh;left:10vw;">
+        <img id ='5' class='obj' src='img/2.png' style="top:20vh;left:10vw;">
+
+        <button id='checkSelect' class="nav-btn">OK！</button>
+    </div>
+
+   
+    <!--義隆瓷器遊戲成功後的物品資訊-->
+    <div id ='objData'>
+    <img id="elongbg" src="img/prizebg.png" alt="Author image">
+		<div class="cd-gallery-container">
+			<nav class="cd-filter">
+				<ul>
+					<li class="placeholder"> 
+						<a data-type="red" href="#0">謝籃</a> <!-- selected option on mobile -->
+					</li> 
+
+					<li>
+						<a class="selected" data-type="red" href="#0">緣錢/緣錢粉</a>
+					</li>
+
+					<li>
+						<a data-type="orange" href="#0">龍鳳燭</a>
+					</li>
+
+					<li>
+						<a data-type="yellow" href="#0">謝籃</a>
+					</li>
+
+					<li>
+						<a data-type="green" href="#0">墨水</a>
+					</li>
+                    
+                    <li>
+						<a data-type="blue" href="#0">婚禮紙膠帶</a>
+					</li>
+                    
+                    <li>
+						<a data-type="purple" href="#0">牙刷</a>
+					</li>
+                    
+				</ul>
+			</nav>
+
+			<ul class="cd-gallery cd-container2">
+				<li>
+					<ul class="cd-item-wrapper">
+						<li data-type="red" class="is-visible">
+							<img src="img/red.png" alt="thumbnail">
+						</li>
+
+						<li data-type="orange" class="is-hidden">
+							<img src="img/orange.png" alt="thumbnail">
+						</li>
+
+						<li data-type="yellow" class="is-hidden">
+							<img src="img/yellow.png" alt="thumbnail">
+						</li>
+
+						<li data-type="green" class="is-hidden">
+							<img src="img/green.png" alt="thumbnail">
+						</li>
+                        
+                        <li data-type="blue" class="is-hidden">
+							<img src="img/blue.png" alt="thumbnail">
+						</li>
+                        
+                        <li data-type="purple" class="is-hidden">
+							<img src="img/purple.png" alt="thumbnail">
+						</li>
+					</ul>
+				</li>
+			</ul> <!-- cd-gallery -->
+		</div> <!-- cd-gallery-container -->
+	     
+		<button id='objDataBtn' class="nav-btn" >OK！</button>
+		
+ 	</div>
+
+   
+    <!--第二張獎牌-->
+    <div >
+        <img id='madel2' src='img/bigprize.png' class="madel">
+    </div>
+
+    <!---最後全部結束的黑畫面-->
+    <div id='black'>
+        <h1 id="blackText" style='font-size:1.5em;'>to be continued...</h1>
+    </div>
+
+
+    
+    <!--JS-->
+	<script src="main.js"></script>
+	<script src="game.js"></script>
+	<script src="story.js"></script>
+	<script src='gameUIControl.js'></script>
+	<script src="ui.js"></script>
+	<script src="js/settingBtnmain.js"></script>
+    <script src="system.js"></script>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+	</head>
+	<body>
+		<p id = "a">123</p>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script>
+			function wifiscan(){
+				if(window.android){
+					$("#a").html(window.android.getWifiData());
+				}
+			}
+			setInterval(wifiscan, 1000);
+		</script>
+	</body>
+</html>

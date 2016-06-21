@@ -1,0 +1,46 @@
+<html>
+    <head>
+    </head>
+    <body>
+	
+	    <input id='studentID'>
+		<button id='submit'>submit</button>
+		<p>吳哲銘 : e24026551</p>
+		<p>史蕓瑄 : c54036071</p>
+		<p>郭子瑋 : f74034025</p>
+		<h1 id='return'></h1>
+		<div style='margin-top:50px;'>
+			<img id='loadingIMG' style='display:none;' src='http://sierrafire.cr.usgs.gov/images/loading.gif'>
+		</div>
+		
+		
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/jcookie/jquery.cookie.js"></script>
+		<script>
+		    /*$('#submit').click(function(){
+			    var id = {id : $('#studentID').val()};
+			    $.ajax({
+				    type : 'POST',
+					data : id,
+					url : '/hw',
+					success : function(data){
+					    console.log(data);
+						$('#loadingIMG').hide();
+						$('#studentID').val('');
+					    $('#return').html(data);
+					},
+					beforeSend : function(){
+						$('#loadingIMG').show();
+					},
+					error : function(){console.log('error');}
+				});
+			});*/
+			$('#submit').click(function(){
+				var str = ["吳哲銘","嗨嗨嗨"]; 
+				$.cookie("test", encodeURIComponent(str.join('\n')));
+				alert(decodeURIComponent($.cookie("test")));
+			});
+			
+		</script>
+    </body>
+</html>
