@@ -29,19 +29,19 @@
 .frame{
 	position : fixed;
 	z-index : 3;
-	width : 95vw;
-	height : 25vh;
-	bottom : 3vh;
-	left : 2.5vw;
-	font-size : 1.2em;
+	width : 92vw;
+	height : 40h;
+	top: 102vw;
+	left : 4vw;
+	font-size : 0.9em;
 	display : none;
 }
 
 #typed {
 	position: absolute;
-	top: 2vh;
-	left : 4vw;
-	width : 90vw;
+	top: 9vh;
+	left : 23vw;
+	width : 60vw;
 	z-index : 4;
 }
 
@@ -54,18 +54,18 @@
 #notePic{
 	position : fixed;
 	z-index : 4;
-	width : 120vw;
-	top : 20vh;
-	left: -10vw;
+	width : 70vw;
+	top : 28vh;
+	left:15vw
 }
 
 .word {
 	position: absolute;
 	z-index : 5;
 	font-size : 1.2em;
-	top: 30vh;
+	top: 35vh;
 	left : 22vw;
-	width : 60vw;
+	width : 55vw;
 }
 
 #noteOpacity {
@@ -175,9 +175,9 @@
 }
 
 #objData {
-    display: none;
+/*    display: none;*/
 	position: fixed;
-    top: 8vh;
+    top: 6vh;
     left:16vw;
     width:50vh;
     

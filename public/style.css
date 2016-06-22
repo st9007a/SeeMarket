@@ -45,7 +45,7 @@ body {
 }
 
 #timeBackLabel{
-/*    display:none;*/
+    display:none;
     position:fixed;
     left:15vw;
     top:10vh;　
