@@ -1,26 +1,26 @@
 jQuery(document).ready(function()
 {
     //按鈕變化
-    $("#hintBtn").mouseenter(function(){
-        $("#hintBtn").css("opacity","1");
-     })
-    $("#hintBtn").mouseleave(function(){
-        $("#hintBtn").css("opacity","0.5");
-     })
-    
-    $("#prizeBtn").mouseenter(function(){
-        $("#prizeBtn").css("opacity","1");
-     })
-    $("#prizeBtn").mouseleave(function(){
-        $("#prizeBtn").css("opacity","0.5");
-     })
-    
-    $("#settingBtn").mouseenter(function(){
-        $("#settingBtn").css("opacity","1");
-     })
-    $("#settingBtn").mouseleave(function(){
-        $("#settingBtn").css("opacity","0.5");
-     })
+//    $("#hintBtn").mouseenter(function(){
+//        $("#hintBtn").css("opacity","1");
+//     })
+//    $("#hintBtn").mouseleave(function(){
+//        $("#hintBtn").css("opacity","0.5");
+//     })
+//    
+//    $("#prizeBtn").mouseenter(function(){
+//        $("#prizeBtn").css("opacity","1");
+//     })
+//    $("#prizeBtn").mouseleave(function(){
+//        $("#prizeBtn").css("opacity","0.5");
+//     })
+//    
+//    $("#settingBtn").mouseenter(function(){
+//        $("#settingBtn").css("opacity","1");
+//     })
+//    $("#settingBtn").mouseleave(function(){
+//        $("#settingBtn").css("opacity","0.5");
+//     })
 
 	//create the slider
 	$('.cd-testimonials-wrapper').flexslider({

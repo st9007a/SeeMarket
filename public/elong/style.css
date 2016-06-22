@@ -166,8 +166,8 @@ Modules - reusable parts of our design
 
 
 .cd-gallery {
-  margin-top: 2.2em;
-  position: relative;
+  margin-top: 1.5em;
+  position: rㄋelative;
   z-index: 5;
 }
 .cd-gallery > li {

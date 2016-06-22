@@ -94,16 +94,16 @@
     position: fixed;
     z-index: 6;
     height: 90vh;
-    left: 30vw;
+    left: 19vw;
     top: -10vh;
     display: none;
 }
 
 .flyer {
     position: fixed;
-    width: 100vh;
-    left: -20vw;
-    top: -10vh;
+    width: 55vh;
+    left: 11vw;
+    top: 12vh;
     display: none;
     z-index: 6;
 }
@@ -149,10 +149,16 @@
 
 #checkSelect {
     position: fixed;
-    left: 50vw;
-    top: 65vh;
+    left:72vw;
+    top: 80vh;
     z-index: 6;
+
 }
+
+#checkSelect-p{
+    width:8vw;
+}
+
 
 #findObj {
     display: none;
@@ -169,7 +175,7 @@
 }
 
 #objData {
-/*    display: none;*/
+    display: none;
 	position: fixed;
     top: 8vh;
     left:16vw;
