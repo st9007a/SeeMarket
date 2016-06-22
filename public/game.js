@@ -106,27 +106,27 @@ function game(){
 //            //回復血量///////////////
 //            console.log('hp recover');
 //        }
-//        if($.cookie('storyStage') == 11&& $.cookie('gameStage') == 8&& $.cookie('story') != 1){
-//            $.cookie('story', 1);
-//            //出現第二張獎牌
-//            $('#madel2').fadeIn(800, function(){
-//                $('#madel2').animate({
-//                        bottom : '+='+screen.height+'px',
-//                        left : '+='+screen.width+'px',
-//                        opacity : '0'
-//                    }, 
-//                    500,
-//                    function(){
-//
-//                        $('#madel2').hide();
-//                        $.cookie('story', '',{expires:-1}) ;
-//                        $.cookie('gameStage', 9);
-//						saveData();
-//                    }
-//                );
-//            });
-//        }
-        if($.cookie('storyStage') == 10&& $.cookie('gameStage') == 6&& $.cookie('story') != 1){
+        if($.cookie('storyStage') == 9&& $.cookie('gameStage') == 6&& $.cookie('story') != 1){
+           $.cookie('story', 1);
+           //出現第二張獎牌
+           $('#madel2').fadeIn(800, function(){
+               $('#madel2').animate({
+                       bottom : '+='+screen.height+'px',
+                       left : '+='+screen.width+'px',
+                       opacity : '0'
+                   }, 
+                   500,
+                   function(){
+
+                       $('#madel2').hide();
+                       $.cookie('story', '',{expires:-1}) ;
+                       $.cookie('gameStage', 7);
+						saveData();
+                   }
+               );
+           });
+        }
+        if($.cookie('storyStage') == 10&& $.cookie('gameStage') == 7&& $.cookie('story') != 1){
             //出現未完待續
             $('#black').show();
             $('#black').animate({
