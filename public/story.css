@@ -163,14 +163,18 @@
 #objDataBtn {
     position: fixed;
     left: 50vw;
-    top: 64vh;
+    top: 68vh;
+    height:8vh;
     z-index: 6;
 }
 
 #objData {
-    display: none;
+/*    display: none;*/
 	position: fixed;
-    top: 0vh;
+    top: 8vh;
+    left:16vw;
+    width:50vh;
+    
     z-index: 6;
 }
 
