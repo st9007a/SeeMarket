@@ -172,31 +172,59 @@ if(window.DeviceOrientationEvent)
 //            }
         }
 		
-		
-		//觸發NPC==============================
-		if(alpha>10 && alpha<80 /*&&locationId==0*/)
-		{
-			$(".npc").hide();
-			$("#n1").show();
+		if(window.android){
+			//觸發NPC==============================
+			if(alpha>10 && alpha<80 &&locationId==0)
+			{
+				$(".npc").hide();
+				$("#n1").show();
+			}
+			else if(alpha>100 && alpha<170 &&locationId==1)
+			{
+				$(".npc").hide();
+				$("#n2").show();
+			}
+			else if(alpha>190 && alpha<260 &&locationId==3)
+			{
+				$(".npc").hide();
+				$("#n3").show();
+			}
+			else if(alpha>280 && alpha<350 &&locationId==4)
+			{
+				$(".npc").hide();
+				$("#n4").show();
+			}
+			else
+			{
+				$(".npc").hide();
+			}
 		}
-		else if(alpha>100 && alpha<170 /*&&locationId==1*/)
-		{
-			$(".npc").hide();
-			$("#n2").show();
-		}
-		else if(alpha>190 && alpha<260 /*&&locationId==3*/)
-		{
-			$(".npc").hide();
-			$("#n3").show();
-		}
-		else if(alpha>280 && alpha<350 /*&&locationId==4*/)
-		{
-			$(".npc").hide();
-			$("#n4").show();
-		}
-		else
-		{
-			//$(".npc").hide();
+		else{
+			//觸發NPC==============================
+			if(alpha>10 && alpha<80 )
+			{
+				$(".npc").hide();
+				$("#n1").show();
+			}
+			else if(alpha>100 && alpha<170 )
+			{
+				$(".npc").hide();
+				$("#n2").show();
+			}
+			else if(alpha>190 && alpha<260 )
+			{
+				$(".npc").hide();
+				$("#n3").show();
+			}
+			else if(alpha>280 && alpha<350 )
+			{
+				$(".npc").hide();
+				$("#n4").show();
+			}
+			else
+			{
+				//$(".npc").hide();
+			}
 		}
 		
     },false);
