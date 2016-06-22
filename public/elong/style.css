@@ -12,7 +12,7 @@ Modules - reusable parts of our design
   top: 10vh;
   left: 15vw;
   max-width: 768px;
-  z-index: 4;
+  z-index: ;
 }
 
 
@@ -29,7 +29,7 @@ Modules - reusable parts of our design
 }
 
 .cd-gallery-container {
-  margin: 2.5em auto;
+  margin: 1.5em auto;
 }
 @media only screen and (min-width: 1200px) {
   .cd-gallery-container {
@@ -166,8 +166,8 @@ Modules - reusable parts of our design
 
 
 .cd-gallery {
-  margin-top: 1.5em;
-  position: rㄋelative;
+  margin-top: 0.8em;
+  position: relative;
   z-index: 5;
 }
 .cd-gallery > li {

@@ -175,9 +175,9 @@
 }
 
 #objData {
-    display: none;
+/*    display: none;*/
 	position: fixed;
-    top: 8vh;
+    top: 6vh;
     left:16vw;
     width:50vh;
     
