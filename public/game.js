@@ -150,7 +150,7 @@ var time = 10;
 function timeBack(){
 	if(time > 0){
 		time--;
-		$('#timeBackLabel').html(time);
+		$('#time').html(time);
 		setTimeout(timeBack, 1000);
 	}
 	else{

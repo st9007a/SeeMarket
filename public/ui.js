@@ -74,6 +74,22 @@ jQuery(document).ready(function()
 		$("#readmeWord").html("");
 		$('.note').fadeOut(500);
 	});
+	
+	//玩家資訊
+	$("#playerInfo").click(function()
+	{
+
+		$("#readmeWord").html("哈囉！"+$.cookie("usrn"));
+
+
+		$('.note').fadeIn(500);
+	});
+
+	$(".note").click(function()
+	{
+		$("#readmeWord").html("");
+		$('.note').fadeOut(500);
+	});
 
 
     

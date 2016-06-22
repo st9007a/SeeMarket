@@ -200,6 +200,7 @@ if(window.DeviceOrientationEvent)
 			}
 		}
 		else{
+			//m70so85
 			//觸發NPC==============================
 			if(alpha>10 && alpha<80 )
 			{
@@ -223,7 +224,7 @@ if(window.DeviceOrientationEvent)
 			}
 			else
 			{
-				//$(".npc").hide();
+				$(".npc").hide();
 			}
 		}
 		
