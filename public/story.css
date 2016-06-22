@@ -29,19 +29,19 @@
 .frame{
 	position : fixed;
 	z-index : 3;
-	width : 95vw;
-	height : 25vh;
-	bottom : 3vh;
-	left : 2.5vw;
-	font-size : 1.2em;
+	width : 92vw;
+	height : 40h;
+	top: 102vw;
+	left : 4vw;
+	font-size : 0.9em;
 	display : none;
 }
 
 #typed {
 	position: absolute;
-	top: 2vh;
-	left : 4vw;
-	width : 90vw;
+	top: 9vh;
+	left : 23vw;
+	width : 60vw;
 	z-index : 4;
 }
 
