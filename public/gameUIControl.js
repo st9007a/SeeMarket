@@ -95,7 +95,7 @@ $('#objDataBtn').click(function(){
 	}, 
 	500,
 	function(){
-//		$('#objData').hide();
+ 		$('#objData').hide();
 		$.cookie('gameStage', 6);
 		$.cookie('story', '',{expires:-1});
 		
