@@ -54,18 +54,18 @@
 #notePic{
 	position : fixed;
 	z-index : 4;
-	width : 120vw;
-	top : 20vh;
-	left: -10vw;
+	width : 70vw;
+	top : 28vh;
+	left:15vw
 }
 
 .word {
 	position: absolute;
 	z-index : 5;
 	font-size : 1.2em;
-	top: 30vh;
+	top: 35vh;
 	left : 22vw;
-	width : 60vw;
+	width : 55vw;
 }
 
 #noteOpacity {
