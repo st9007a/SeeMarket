@@ -106,7 +106,7 @@ function game(){
 //            //回復血量///////////////
 //            console.log('hp recover');
 //        }
-        if($.cookie('storyStage') == 10&& $.cookie('gameStage') == 6&& $.cookie('story') != 1){
+        if($.cookie('storyStage') == 9&& $.cookie('gameStage') == 6&& $.cookie('story') != 1){
            $.cookie('story', 1);
            //出現第二張獎牌
            $('#madel2').fadeIn(800, function(){
