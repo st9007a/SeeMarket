@@ -202,22 +202,23 @@ if(window.DeviceOrientationEvent)
 		else{
 			//m70so85
 			//觸發NPC==============================
-			if(alpha>10 && alpha<80 )
+			console.log("aaaa");
+			if(alpha>=0 && alpha<90 )
 			{
 				$(".npc").hide();
 				$("#n1").show();
 			}
-			else if(alpha>100 && alpha<170 )
+			else if(alpha>90 && alpha<180 )
 			{
 				$(".npc").hide();
 				$("#n2").show();
 			}
-			else if(alpha>190 && alpha<260 )
+			else if(alpha>180 && alpha<270 )
 			{
 				$(".npc").hide();
 				$("#n3").show();
 			}
-			else if(alpha>280 && alpha<350 )
+			else if(alpha>270 && alpha<350 )
 			{
 				$(".npc").hide();
 				$("#n4").show();
