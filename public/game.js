@@ -38,7 +38,7 @@ function game(){
                 id_game_interval = setInterval(game, 1000);
             });
         }
-        if($.cookie('storyStage') == 2&& $.cookie('gameStage') == 1 &&locationId==2){
+        if($.cookie('storyStage') == 2&& $.cookie('gameStage') == 1 &&((locationId==2 &&window.android)||!window.android)){
 
             clearInterval(id_game_interval);
             //拿出傳單看看
