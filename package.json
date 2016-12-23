@@ -1,0 +1,23 @@
+{
+  "name": "SeeMarket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:st9007a/SeeMarket.git",
+    "type": "git"
+  },
+  "author": "uno <st9007a@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.14.2",
+    "letsencrypt-express": "^2.0.5",
+    "mongoose": "^4.7.4",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "sha1": "^1.1.1",
+    "spdy": "^3.4.4"
+  }
+}
